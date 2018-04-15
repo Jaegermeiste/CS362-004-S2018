@@ -115,6 +115,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="badTestDrawCard.c" />
+    <ClCompile Include="betterTestDrawCard.c" />
+    <ClCompile Include="dominion.c" />
+    <ClCompile Include="interface.c" />
+    <ClCompile Include="playdom.c" />
+    <ClCompile Include="player.c" />
+    <ClCompile Include="rngs.c" />
+    <ClCompile Include="rt.c" />
+    <ClCompile Include="supplyTest.c" />
+    <ClCompile Include="testBuyCard.c" />
+    <ClCompile Include="testDrawCard.c" />
+    <ClCompile Include="testInit.c" />
+    <ClCompile Include="testShuffle.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dominion.h" />
+    <ClInclude Include="dominion_helpers.h" />
+    <ClInclude Include="interface.h" />
+    <ClInclude Include="rngs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="READM.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

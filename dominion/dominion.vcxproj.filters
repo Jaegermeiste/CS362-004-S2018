@@ -14,4 +14,67 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="badTestDrawCard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="betterTestDrawCard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dominion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playdom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rngs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="supplyTest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testBuyCard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testDrawCard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testInit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testShuffle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dominion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dominion_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rngs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="READM.md">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
