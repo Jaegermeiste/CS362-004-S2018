@@ -691,11 +691,13 @@ int cardEffectAdventurer(const int currentPlayer, struct gameState *state)
 
 int cardEffectSmithy(const int currentPlayer, struct gameState *state, const int handPos)
 {
+	unsigned i = 0;
+
 	//+3 Cards
 #ifdef ENABLE_ASSIGNMENT2_BUGS
-	for (unsigned i = 0; i <= 3; i++)
+	for (i = 0; i <= 3; i++)
 #else
-	for (unsigned i = 0; i < 3; i++)
+	for (i = 0; i < 3; i++)
 #endif
 	{
 		drawCard(currentPlayer, state);
@@ -708,6 +710,7 @@ int cardEffectSmithy(const int currentPlayer, struct gameState *state, const int
 
 int cardEffectMine(const int currentPlayer, struct gameState *state, const int handPos, const int choice1, const int choice2)
 {
+	int i = 0;
 	const int trashCard = state->hand[currentPlayer][choice1];  //store card we will trash
 
 	if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
@@ -735,7 +738,7 @@ int cardEffectMine(const int currentPlayer, struct gameState *state, const int h
 #endif
 
 	//discard trashed card
-	for (int i = 0; i < state->handCount[currentPlayer]; i++)
+	for (i = 0; i < state->handCount[currentPlayer]; i++)
 	{
 		if (state->hand[currentPlayer][i] == trashCard)
 		{
@@ -749,6 +752,7 @@ int cardEffectMine(const int currentPlayer, struct gameState *state, const int h
 
 int cardEffectRemodel(const int currentPlayer, struct gameState *state, const int handPos, const int choice1, const int choice2)
 {
+	int i = 0;
 	const int trashCard = state->hand[currentPlayer][choice1];  //store card we will trash
 
 	if ((getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2))
@@ -762,7 +766,7 @@ int cardEffectRemodel(const int currentPlayer, struct gameState *state, const in
 	discardCard(handPos, currentPlayer, state, 0);
 
 	//discard trashed card
-	for (int i = 0; i < state->handCount[currentPlayer]; i++)
+	for (i = 0; i < state->handCount[currentPlayer]; i++)
 	{
 		if (state->hand[currentPlayer][i] == trashCard)
 		{
@@ -777,7 +781,9 @@ int cardEffectRemodel(const int currentPlayer, struct gameState *state, const in
 
 int cardEffectSeaHag(const int currentPlayer, struct gameState *state)
 {
-	for (int i = 0; i < state->numPlayers; i++)
+	int i = 0;
+
+	for (i = 0; i < state->numPlayers; i++)
 	{
 		if (i != currentPlayer)
 		{
