@@ -115,9 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dominion.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\projects\georgeja\dominion\dominion.h" />
     <ClInclude Include="..\projects\georgeja\dominion\dominion_helpers.h" />
     <ClInclude Include="..\projects\georgeja\dominion\interface.h" />
@@ -126,6 +123,21 @@
   <ItemGroup>
     <None Include="..\projects\georgeja\dominion\Makefile" />
     <None Include="..\projects\georgeja\dominion\READM.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\projects\georgeja\dominion\badTestDrawCard.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\betterTestDrawCard.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\dominion.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\interface.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\playdom.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\player.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\rngs.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\rt.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\supplyTest.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\testBuyCard.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\testDrawCard.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\testInit.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\testShuffle.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

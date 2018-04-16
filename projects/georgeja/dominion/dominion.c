@@ -646,6 +646,8 @@ int getCost(int cardNumber)
 /*
 * BEGIN ASSIGNMENT 2 REFACTOR
 */
+#define ENABLE_ASSIGNMENT2_BUGS	// Comment me to turn off the bugs
+
 int cardEffectAdventurer(const int currentPlayer, struct gameState *state)
 {
 	int drawnTreasure = 0;
@@ -653,7 +655,8 @@ int cardEffectAdventurer(const int currentPlayer, struct gameState *state)
 	int tempHand[MAX_HAND];// moved above the if statement
 	int tempHandCounter = 0;// this is the counter for the temp hand
 
-	while (drawnTreasure < 2) {
+	while (drawnTreasure < 2)
+	{
 		if (state->deckCount[currentPlayer] < 1) //if the deck is empty we need to shuffle discard and add to deck
 		{
 			shuffle(currentPlayer, state);
@@ -673,7 +676,12 @@ int cardEffectAdventurer(const int currentPlayer, struct gameState *state)
 			tempHandCounter++;
 		}
 	}
+
+#ifdef ENABLE_ASSIGNMENT2_BUGS
+	while (tempHandCounter >= 0)
+#else
 	while (tempHandCounter - 1 >= 0)
+#endif
 	{
 		state->discard[currentPlayer][state->discardCount[currentPlayer]++] = tempHand[tempHandCounter - 1]; // discard all cards in play that have been drawn
 		tempHandCounter = tempHandCounter - 1;
@@ -684,7 +692,11 @@ int cardEffectAdventurer(const int currentPlayer, struct gameState *state)
 int cardEffectSmithy(const int currentPlayer, struct gameState *state, const int handPos)
 {
 	//+3 Cards
+#ifdef ENABLE_ASSIGNMENT2_BUGS
+	for (unsigned i = 0; i <= 3; i++)
+#else
 	for (unsigned i = 0; i < 3; i++)
+#endif
 	{
 		drawCard(currentPlayer, state);
 	}
@@ -716,7 +728,11 @@ int cardEffectMine(const int currentPlayer, struct gameState *state, const int h
 	gainCard(choice2, state, 2, currentPlayer);
 
 	//discard card from hand
+#ifdef ENABLE_ASSIGNMENT2_BUGS
+	discardCard(handPos, currentPlayer, state, 1);
+#else
 	discardCard(handPos, currentPlayer, state, 0);
+#endif
 
 	//discard trashed card
 	for (int i = 0; i < state->handCount[currentPlayer]; i++)
@@ -768,7 +784,12 @@ int cardEffectSeaHag(const int currentPlayer, struct gameState *state)
 			state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];
 			state->deckCount[i]--;
 			state->discardCount[i]++;
+
+#ifdef ENABLE_ASSIGNMENT2_BUGS
+			state->deck[i][state->deckCount[i]--] = estate;	//Top card now a curse
+#else
 			state->deck[i][state->deckCount[i]--] = curse;	//Top card now a curse
+#endif	
 		}
 	}
 	return 0;
@@ -790,11 +811,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	int tributeRevealedCards[2] = { -1, -1 };
 	int temphand[MAX_HAND];// moved above the if statement
 
-	int z = 0;// this is the counter for the temp hand
 	if (nextPlayer > (state->numPlayers - 1)) {
 		nextPlayer = 0;
 	}
-
 
 	//uses switch to select card and perform actions
 	switch (card)

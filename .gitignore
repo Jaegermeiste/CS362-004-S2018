@@ -3,3 +3,12 @@
 projects/georgeja/dominion/.vs/dominion/v15/.suo
 dominion/.vs/dominion/v15/.suo
 *.opendb
+projects/georgeja/dominion/badTestDrawCard
+*.gcno
+*.gcov
+*.gcda
+*.o
+projects/georgeja/dominion/playdom
+projects/georgeja/dominion/player
+projects/georgeja/dominion/testDrawCard
+*.out
