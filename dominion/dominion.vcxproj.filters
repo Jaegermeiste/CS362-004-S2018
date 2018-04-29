@@ -38,6 +38,9 @@
     <None Include="..\projects\georgeja\dominion\READM.md">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="..\projects\georgeja\dominion\unittestresults.out">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\projects\georgeja\dominion\badTestDrawCard.c">

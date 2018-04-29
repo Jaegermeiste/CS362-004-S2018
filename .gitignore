@@ -26,3 +26,6 @@ projects/georgeja/dominion/unittest1
 projects/georgeja/dominion/unittest2
 projects/georgeja/dominion/unittest3
 projects/georgeja/dominion/unittest4
+*.filters
+*.vcxproj
+dominion/.leu

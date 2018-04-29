@@ -123,6 +123,7 @@
   <ItemGroup>
     <None Include="..\projects\georgeja\dominion\Makefile" />
     <None Include="..\projects\georgeja\dominion\READM.md" />
+    <None Include="..\projects\georgeja\dominion\unittestresults.out" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\projects\georgeja\dominion\badTestDrawCard.c" />
