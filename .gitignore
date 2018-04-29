@@ -12,3 +12,17 @@ projects/georgeja/dominion/playdom
 projects/georgeja/dominion/player
 projects/georgeja/dominion/testDrawCard
 *.out
+*.ipch
+*.vcxproj
+*.filters
+*.user
+*.filters
+*.vcxproj
+projects/georgeja/dominion/cardtest1
+projects/georgeja/dominion/cardtest2
+projects/georgeja/dominion/cardtest3
+projects/georgeja/dominion/cardtest4
+projects/georgeja/dominion/unittest1
+projects/georgeja/dominion/unittest2
+projects/georgeja/dominion/unittest3
+projects/georgeja/dominion/unittest4
