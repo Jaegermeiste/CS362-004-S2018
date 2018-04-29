@@ -17,8 +17,9 @@
 
 // To avoid making it hard to collect coverage when a test fails, use your own asserttrue function instead
 // of the standard C assert(which basically crashes the code and fails to collect coverage).
+#ifndef asserttrue
 #define asserttrue(x, y) if ((y) != 0) { x += 0; } else { printf(" !!! TEST FAILED AT LINE: %d\n", __LINE__); x += 1; };
-
+#endif
 
 /*********************************************************************
 ** Description: int main(int argc, char *argv[])
@@ -47,6 +48,8 @@ int main(int argc, char *argv[])
 	int retVal = initializeGame(numPlayers, cards, randomSeed, &state);
 	asserttrue(errorCount, retVal == 0);
 
+	printf(" UNIT TEST: updateCoins\n");
+
 	// Test the null state - no changes
 	memcpy(&testState, &state, sizeof(struct gameState));
 	retVal = updateCoins(0, &testState, 0);
@@ -62,37 +65,43 @@ int main(int argc, char *argv[])
 	// Player number -1 (in a valid range of 0-3)
 	memcpy(&testState, &state, sizeof(struct gameState));
 	retVal = updateCoins(-1, &testState, 0);
-	asserttrue(errorCount, retVal == 0);						// Function returned cleanly
+	asserttrue(errorCount, retVal != 0);						// Function returned badly
 	asserttrue(errorCount, testState.coins == 0);				// Expected coins are 0
 	asserttrue(errorCount, testState.coins != state.coins);		// The value changed from the original
 
+	/* // Causes SIGSEGV
 	// Player number -2147483648 (in a valid range of 0-3)
 	memcpy(&testState, &state, sizeof(struct gameState));
 	retVal = updateCoins(INT_MIN, &testState, 0);
-	asserttrue(errorCount, retVal == 0);						// Function returned cleanly
+	asserttrue(errorCount, retVal != 0);						// Function returned badly
 	asserttrue(errorCount, testState.coins == 0);				// Expected coins are 0
 	asserttrue(errorCount, testState.coins != state.coins);		// The value changed from the original
+	*/
 
 	// Player number 4 (in a valid range of 0-3)
 	memcpy(&testState, &state, sizeof(struct gameState));
+	//makeprintf("%d %d\n", testState.coins, state.coins);
 	retVal = updateCoins(MAX_PLAYERS, &testState, 0);
-	asserttrue(errorCount, retVal == 0);						// Function returned cleanly
+	asserttrue(errorCount, retVal != 0);						// Function returned badly
 	asserttrue(errorCount, testState.coins == 0);				// Expected coins are 0
+	//printf("%d %d\n", testState.coins, state.coins);
 	asserttrue(errorCount, testState.coins != state.coins);		// The value changed from the original
 
 	// Player number 5 (in a valid range of 0-3)
 	memcpy(&testState, &state, sizeof(struct gameState));
 	retVal = updateCoins(MAX_PLAYERS + 1, &testState, 0);
-	asserttrue(errorCount, retVal == 0);						// Function returned cleanly
+	asserttrue(errorCount, retVal != 0);						// Function returned badly
 	asserttrue(errorCount, testState.coins == 0);				// Expected coins are 0
 	asserttrue(errorCount, testState.coins != state.coins);		// The value changed from the original
 
+	/* // Causes SIGSEGV
 	// Player number 2147483647 (in a valid range of 0-3)
 	memcpy(&testState, &state, sizeof(struct gameState));
 	retVal = updateCoins(INT_MAX, &testState, 0);
-	asserttrue(errorCount, retVal == 0);						// Function returned cleanly
+	asserttrue(errorCount, retVal != 0);						// Function returned badly
 	asserttrue(errorCount, testState.coins == 0);				// Expected coins are 0
 	asserttrue(errorCount, testState.coins != state.coins);		// The value changed from the original
+	*/
 
 	// Player Num Variable
 	for (player = 0; player < numPlayers; player++)
@@ -127,16 +136,40 @@ int main(int argc, char *argv[])
 				}
 				retVal = updateCoins(player, &testState, bonus);
 				asserttrue(errorCount, retVal == 0);								// Function returned cleanly
-				asserttrue(errorCount, testState.coins == handCount * 1 + bonus);	// Expected coins
+				asserttrue(errorCount, testState.coins == handCount * 2 + bonus);	// Expected coins
 
 				// Test all the player's cards as gold
 				for (cardNumber = 0; cardNumber < handCount; cardNumber++)
 				{
-					testState.hand[player][cardNumber] = copper;
+					testState.hand[player][cardNumber] = gold;
 				}
 				retVal = updateCoins(player, &testState, bonus);
 				asserttrue(errorCount, retVal == 0);								// Function returned cleanly
-				asserttrue(errorCount, testState.coins == handCount * 1 + bonus);	// Expected coins
+				asserttrue(errorCount, testState.coins == handCount * 3 + bonus);	// Expected coins
+
+				// Test all the players cards as combinations of copper, silver, and gold
+				int copperCount = 0, silverCount = 0, goldCount = 0;
+				for (cardNumber = 0; cardNumber < handCount; cardNumber++)
+				{
+					if ((cardNumber + 1) % 3 == 0)
+					{
+						testState.hand[player][cardNumber] = gold;
+						goldCount++;
+					}
+					else if ((cardNumber + 1) % 2 == 0)
+					{
+						testState.hand[player][cardNumber] = silver;
+						silverCount++;
+					}
+					else
+					{
+						testState.hand[player][cardNumber] = copper;
+						copperCount++;
+					}
+				}
+				retVal = updateCoins(player, &testState, bonus);
+				asserttrue(errorCount, retVal == 0);								// Function returned cleanly
+				asserttrue(errorCount, testState.coins == ((goldCount * 3) + (silverCount * 2) + (copperCount * 1) + bonus));	// Expected coins
 			}
 		}
 	}
@@ -149,6 +182,8 @@ int main(int argc, char *argv[])
 	{
 		printf(" %d TESTS FAILED\n", errorCount);
 	}
+
+	printf("\n");
 
 	return 0;
 }

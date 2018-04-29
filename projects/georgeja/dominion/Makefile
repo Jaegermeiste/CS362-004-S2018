@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -lm -enable-checking -O0 -v -da -Q
+CFLAGS = -Wall -fpic -coverage -fprofile-arcs -ftest-coverage -lm -enable-checking -O0 -da -Q
 
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
@@ -55,16 +55,34 @@ testAll: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 c
 # .out file should act as a proof that your tests run correctly and you collected coverage
 # information correctly. (10 points)
 runtests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 
-	./unittest1 &> unittestresults.out
+	rm -f unittestresults.out
+	echo "Results for running Dominion tests:" >> unittestresults.out
+	echo "unittest1:" >> unittestresults.out
+	./unittest1 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "unittest2:" >> unittestresults.out
 	./unittest2 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "unittest3:" >> unittestresults.out
 	./unittest3 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "unittest4:" >> unittestresults.out
 	./unittest4 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "cardtest1:" >> unittestresults.out
 	./cardtest1 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "cardtest2:" >> unittestresults.out
 	./cardtest2 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "cardtest3:" >> unittestresults.out
 	./cardtest3 >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "cardtest4:" >> unittestresults.out
 	./cardtest4 >> unittestresults.out 2>&1
-	gcov dominion.c >> unittestresults.out 2>&1
-#	cat dominion.c.gcov >> unittestresults.out 2>&1
+	gcov -b -f dominion.c >> unittestresults.out 2>&1
+	echo "gcov detail:" >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out 2>&1
 
 
 player: player.c interface.o

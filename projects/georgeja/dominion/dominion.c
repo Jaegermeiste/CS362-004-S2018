@@ -646,7 +646,7 @@ int getCost(int cardNumber)
 /*
 * BEGIN ASSIGNMENT 2 REFACTOR
 */
-#define ENABLE_ASSIGNMENT2_BUGS	// Comment me to turn off the bugs
+#define ENABLE_ASSIGNMENT2_BUGS	1 // Comment me to turn off the bugs
 
 int cardEffectAdventurer(const int currentPlayer, struct gameState *state)
 {
