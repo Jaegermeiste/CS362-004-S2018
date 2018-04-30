@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 	int retVal = initializeGame(numPlayers, cards, randomSeed, &state);
 	asserttrue(errorCount, retVal == 0);
 
-	for (pass = 1; pass <= 6; pass++)
+	for (pass = 1; pass <= 7; pass++)
 	{
 		printf(" CARD TEST: adventurer, pass = %d\n", pass);
 
@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
 		const int numActions = testState.numActions;
 
 		// Make adjustments to ensure branch coverage
-		if (pass == 2)
+		if ((pass % 2) == 0)
 		{
 			testState.deckCount[player] = 1;
 		}
@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
 		{
 			testState.hand[player][handCount - 1] = gold;
 		}
-		else if (pass == 6)
+		else if (pass >= 6)
 		{
 			testState.hand[player][handCount - 1] = curse;
 		}
