@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 		asserttrue(errorCount, testState.handCount[player] == (handCount - cardFound));			// -treasure_map(s)
 		asserttrue(errorCount, testState.numActions <= numActions);								// treasure_map is terminal, actions should not increase
 
-		// Count existing golds in deck
+		// Count new golds in deck
 		int newGoldCount = 0;
 		for (i = 0; i < testState.deckCount[player]; i++)
 		{
