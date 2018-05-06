@@ -55,3 +55,7 @@ dominion/.leu
 *.jump2
 *.tlog
 projects/georgeja/RandomTestingQuiz/.vs/RandomTestingQuiz/v15/.suo
+*.log
+projects/georgeja/quiz/.leu
+projects/georgeja/quiz/.vs/RandomTestingQuiz/v15/.suo
+projects/georgeja/quiz/RandomTestingQuiz/testme
