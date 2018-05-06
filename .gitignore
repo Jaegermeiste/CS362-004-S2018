@@ -53,3 +53,5 @@ dominion/.leu
 *.alignments
 *.stack
 *.jump2
+*.tlog
+projects/georgeja/RandomTestingQuiz/.vs/RandomTestingQuiz/v15/.suo
