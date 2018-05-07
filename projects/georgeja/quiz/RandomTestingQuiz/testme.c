@@ -67,6 +67,7 @@ char *inputString()
 		currentTime = time(NULL);
 		if ((difftime(currentTime, startTime) > 280) || (runCount >= (INT_MAX - 1)))	// 300 seconds is 5 minutes
 		{
+			// DISABLE FORCED RESET
 			/*printf(" DEBUG: Near 5 minutes\n");
 			string[0] = 'r';
 			string[1] = 'e';
