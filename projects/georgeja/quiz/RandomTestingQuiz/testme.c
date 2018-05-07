@@ -2,6 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 #include<time.h>
+#include <limits.h>
 
 char inputChar()
 {
@@ -11,7 +12,7 @@ char inputChar()
 
 char *inputString()
 {
-	static unsigned startTimeSet = 0;
+	static unsigned runCount = 0;
 	static time_t startTime = {0};
 	time_t currentTime = {0};
 	// include only the letters used in the target statement
@@ -22,33 +23,13 @@ char *inputString()
 	memset(&string, 0, sizeof(char) * 7);
 
 	// Set the start time, if need be
-	if (!startTimeSet)
+	if (!runCount)
 	{
 		startTime = time(NULL);
-		startTimeSet = 1;
-
-		// Ensure that we test the branch before the state can increase
-		string[0] = 'r';
-		string[1] = 'e';
-		string[2] = 's';
-		string[3] = 'e';
-		string[4] = 't';
-		string[5] = '\0';
-
-		return (char*)string;
+		runCount++;
 	}
 
-	// Iterate through the first 6 characters
-	for (i = 0; i < 6; i++)
-	{
-		string[i] = sourceBuffer[rand() % 5];
-	}
-
-	// If we are approaching the time limit, force the reset
-	currentTime = time(NULL);
-	if (difftime(currentTime, startTime) > 280)	// 300 seconds is 5 minutes
-	{
-		printf(" DEBUG: Near 5 minutes\n");
+/*		// Ensure that we test the branch before the state can increase
 		string[0] = 'r';
 		string[1] = 'e';
 		string[2] = 's';
@@ -56,10 +37,65 @@ char *inputString()
 		string[4] = 't';
 		string[5] = '\0';
 	}
-	else if (strncmp(string, "reset", 5) == 0) // Less than 280 seconds
+	else if (runCount <= 6)
 	{
-		// Guarantee that we don't hit the reset
-		string[0] = 's';
+		string[0] = 'r';
+		string[1] = 'e';
+		string[2] = 's';
+		string[3] = 'e';
+		string[4] = 't';
+		string[5] = '\0';
+
+		string[runCount] = '\0';
+
+		runCount++;
+	}
+	else if (runCount == 7)
+	{
+		string[0] = 'r';
+		string[1] = 'e';
+		string[2] = 's';
+		string[3] = 'e';
+		string[4] = 't';
+		string[5] = 't';
+
+		runCount++;
+	}
+	else*/
+	{
+		// If we are approaching the time limit, force the reset
+		currentTime = time(NULL);
+		if ((difftime(currentTime, startTime) > 280) || (runCount >= (INT_MAX - 1)))	// 300 seconds is 5 minutes
+		{
+			/*printf(" DEBUG: Near 5 minutes\n");
+			string[0] = 'r';
+			string[1] = 'e';
+			string[2] = 's';
+			string[3] = 'e';
+			string[4] = 't';
+			string[5] = '\0';*/
+
+			// Iterate through the first 6 characters
+			for (i = 0; i < 6; i++)
+			{
+				string[i] = sourceBuffer[rand() % 4];	// Don't include the null to improve chances of hitting the target
+			}
+		}
+		else
+		{
+			// Iterate through the first 6 characters
+			for (i = 0; i < 6; i++)
+			{
+				string[i] = sourceBuffer[rand() % 5];
+			}
+		}
+		/*else if (strncmp(string, "reset", 5) == 0) // Less than 280 seconds
+		{
+			// Guarantee that we don't hit the reset
+			string[5] = 's';
+		}*/
+
+		runCount++;
 	}
 
 	return (char*)string;

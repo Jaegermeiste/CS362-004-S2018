@@ -1,4 +1,4 @@
-CFLAGS = -Wall -fpic -coverage -fprofile-arcs -ftest-coverage -lm -enable-checking -O0 -da -Q
+CFLAGS = -Wall -fpic -coverage -fprofile-arcs -ftest-coverage -lm -O0 -da -Q
 
 testme:
 	gcc -o testme testme.c -g $(CFLAGS)
@@ -11,5 +11,6 @@ clean:
 rebuild: clean all
 
 run: testme
-	./testme
+	rm -f *.gcov
+	-./testme
 	gcov -b -f testme
