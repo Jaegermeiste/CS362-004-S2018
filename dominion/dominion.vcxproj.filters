@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Assignment 3">
       <UniqueIdentifier>{099309f4-548d-4391-9746-14820a78966a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Assignment 4">
+      <UniqueIdentifier>{d76a9e1c-4569-4f63-934d-3cc8cf6b5a09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\projects\georgeja\dominion\dominion.h">
@@ -32,13 +35,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\projects\georgeja\dominion\Makefile">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="..\projects\georgeja\dominion\READM.md">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="..\projects\georgeja\dominion\unittestresults.out">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\projects\georgeja\dominion\Makefile">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
@@ -105,6 +108,15 @@
     </ClCompile>
     <ClCompile Include="..\projects\georgeja\dominion\unittest4.c">
       <Filter>Source Files\Assignment 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\projects\georgeja\dominion\randomtestcard1.c">
+      <Filter>Source Files\Assignment 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\projects\georgeja\dominion\randomtestadventurer.c">
+      <Filter>Source Files\Assignment 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\projects\georgeja\dominion\randomtestcard2.c">
+      <Filter>Source Files\Assignment 4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

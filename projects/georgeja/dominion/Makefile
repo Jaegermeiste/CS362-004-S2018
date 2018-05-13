@@ -46,7 +46,7 @@ cardtest3: cardtest3.c dominion.o rngs.o interface.o
 cardtest4: cardtest4.c dominion.o rngs.o interface.o
 	gcc -o cardtest4 -g  cardtest4.c dominion.o rngs.o interface.o $(CFLAGS)
 
-testAll: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
+unitTestAll: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 
 # Add a rule in Makefile that will generate and execute all of these tests, and append complete
 # testing results (including % coverage) into a file called unittestresults.out. The rule should be
@@ -54,7 +54,7 @@ testAll: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 c
 # code. The .out files contain the output of your running tests and coverage information. Basically
 # .out file should act as a proof that your tests run correctly and you collected coverage
 # information correctly. (10 points)
-runtests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 
+runUnitTests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 
 	rm -f unittestresults.out
 	echo "Results for running Dominion tests:" >> unittestresults.out
 	echo "unittest1:" >> unittestresults.out
@@ -84,6 +84,42 @@ runtests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 
 	echo "gcov detail:" >> unittestresults.out
 	cat dominion.c.gcov >> unittestresults.out 2>&1
 
+# Assignment 4
+# 3- Add rules to the Makefile to produce randomtestcard1.out, randomtestcard2.out, and randomtestadventurer.out, including coverage results.
+randomtestcard1: randomtestcard1.c dominion.o rngs.o interface.o
+	gcc -o randomtestcard1 -g  randomtestcard1.c dominion.o rngs.o interface.o $(CFLAGS)
+
+randomtestcard2: randomtestcard2.c dominion.o rngs.o interface.o
+	gcc -o randomtestcard2 -g  randomtestcard2.c dominion.o rngs.o interface.o $(CFLAGS)
+
+randomtestadventurer: randomtestadventurer.c dominion.o rngs.o interface.o
+	gcc -o randomtestadventurer -g  randomtestadventurer.c dominion.o rngs.o interface.o $(CFLAGS) -fno-stack-protector -fverbose-asm
+
+randomTestAll: randomtestcard1 randomtestcard2 randomtestadventurer
+
+runRandomTests: randomtestcard1 randomtestcard2 randomtestadventurer
+	rm -f randomtestcard1.out randomtestcard2.out randomtestadventurer.out
+	echo "randomtestcard1:" >> randomtestcard1.out
+	date >> randomtestcard1.out 2>&1
+	./randomtestcard1 >> randomtestcard1.out 2>&1
+	date >> randomtestcard1.out 2>&1
+	gcov -b -f dominion.c >> randomtestcard1.out 2>&1
+	echo "" >> randomtestcard1.out
+	cat dominion.c.gcov >> randomtestcard1.out 2>&1
+	echo "randomtestcard2:" >> randomtestcard2.out
+	date >> randomtestcard2.out 2>&1
+	./randomtestcard2 >> randomtestcard2.out 2>&1
+	date >> randomtestcard2.out 2>&1
+	gcov -b -f dominion.c >> randomtestcard2.out 2>&1
+	echo "" >> randomtestcard2.out
+	cat dominion.c.gcov >> randomtestcard2.out 2>&1
+	echo "randomtestadventurer:" >> randomtestadventurer.out
+	date >> randomtestadventurer.out 2>&1
+	./randomtestadventurer >> randomtestadventurer.out 2>&1
+	date >> randomtestadventurer.out 2>&1
+	gcov -b -f dominion.c >> randomtestadventurer.out 2>&1
+	echo "" >> randomtestadventurer.out
+	cat dominion.c.gcov >> randomtestadventurer.out 2>&1
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
@@ -91,4 +127,4 @@ player: player.c interface.o
 all: playdom player 
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest2 unitetest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest2 unitetest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 randomtestcard1 randomtestcard2 randomtestadventurer

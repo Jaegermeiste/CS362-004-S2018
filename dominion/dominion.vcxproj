@@ -136,6 +136,9 @@
     <ClCompile Include="..\projects\georgeja\dominion\interface.c" />
     <ClCompile Include="..\projects\georgeja\dominion\playdom.c" />
     <ClCompile Include="..\projects\georgeja\dominion\player.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\randomtestadventurer.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\randomtestcard1.c" />
+    <ClCompile Include="..\projects\georgeja\dominion\randomtestcard2.c" />
     <ClCompile Include="..\projects\georgeja\dominion\rngs.c" />
     <ClCompile Include="..\projects\georgeja\dominion\rt.c" />
     <ClCompile Include="..\projects\georgeja\dominion\supplyTest.c" />
