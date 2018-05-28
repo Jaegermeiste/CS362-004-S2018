@@ -350,7 +350,7 @@ int main(int argc, char *argv[])
 
 		const int player = state.whoseTurn;
 
-		// Check for an adventurer card dealt
+		// Check for an village card dealt
 		for (i = 0; (i < state.handCount[0]) && (cardFound == 0); i++)
 		{
 			if (state.hand[player][i] == village)
@@ -360,7 +360,7 @@ int main(int argc, char *argv[])
 			}
 		}
 
-		// Add an adventurer card if not found
+		// Add an village card if not found
 		if (cardFound <= 0)
 		{
 			state.hand[player][i] = village;
