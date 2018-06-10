@@ -101,7 +101,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1081" />
     <option name="y" value="29" />
     <option name="width" value="1398" />
@@ -263,7 +263,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528590471435</updated>
-      <workItem from="1528590476017" duration="7932000" />
+      <workItem from="1528590476017" duration="7997000" />
     </task>
     <servers />
   </component>
@@ -300,11 +300,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7932000" />
+    <option name="totallyTimeSpent" value="7997000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1081" y="29" width="1398" height="998" extended-state="1" />
-    <editor active="true" />
+    <frame x="1081" y="29" width="1398" height="998" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -315,7 +314,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34767836" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34767836" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.37771347" />
       <window_info anchor="bottom" id="Terminal" />
