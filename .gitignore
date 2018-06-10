@@ -50,3 +50,4 @@ projects/georgeja/dominion/unittest1
 projects/georgeja/dominion/cardtest4
 projects/georgeja/dominion/cardtest3
 projects/georgeja/dominion/cardtest2
+*.class
