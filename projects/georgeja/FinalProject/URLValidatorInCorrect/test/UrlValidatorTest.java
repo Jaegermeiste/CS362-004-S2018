@@ -24,7 +24,8 @@ public class UrlValidatorTest extends TestCase {
    {
 //You can use this function to implement your manual testing
       Console console = System.console();
-      UrlValidator urlTest = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
+      String[] schemes = {"http","https"};
+      UrlValidator urlTest = new UrlValidator(schemes, UrlValidator.ALLOW_ALL_SCHEMES);
 
       // The following tests should pass
       String URL = "http://www.google.com";
@@ -60,7 +61,7 @@ public class UrlValidatorTest extends TestCase {
       }
 
       // This should be a nonsense string
-      result = urlTest.isValid(urlTest.toString());
+      result = urlTest.isValid("lkajdsfhgvkljdafshnbvkbjl");
       Assert.assertFalse(result);
        if (!result)
        {
