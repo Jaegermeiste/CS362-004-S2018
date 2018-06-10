@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e84753-c3cb-4af2-b7d6-67bb8fe884e0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../FinalProject/URLValidatorInCorrect/src/RegexValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FinalProject/URLValidatorInCorrect/src/RegexValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/UrlValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UrlValidatorTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="13e84753-c3cb-4af2-b7d6-67bb8fe884e0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="1037">
+              <caret line="63" column="57" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegexValidator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegexValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RegexValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
@@ -105,7 +101,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1081" />
     <option name="y" value="29" />
     <option name="width" value="1398" />
@@ -267,7 +263,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528590471435</updated>
-      <workItem from="1528590476017" duration="7455000" />
+      <workItem from="1528590476017" duration="7932000" />
     </task>
     <servers />
   </component>
@@ -304,10 +300,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7455000" />
+    <option name="totallyTimeSpent" value="7932000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1081" y="29" width="1398" height="998" extended-state="0" />
+    <frame x="1081" y="29" width="1398" height="998" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -484,16 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RegexValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -503,6 +489,16 @@
             <element signature="e#2817#2818#0" expanded="true" />
             <element signature="e#3238#3239#0" expanded="true" />
             <element signature="e#3295#3296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
