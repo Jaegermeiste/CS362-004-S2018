@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e84753-c3cb-4af2-b7d6-67bb8fe884e0" name="Default" comment="" />
+    <list default="true" id="13e84753-c3cb-4af2-b7d6-67bb8fe884e0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/test/UrlValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/UrlValidatorTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,64 +13,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/URLValidatorInCorrect$UrlValidatorTest.ic" NAME="UrlValidatorTest Coverage Results" MODIFIED="1528592300376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/URLValidatorInCorrect$UrlValidatorTest_testManualTest.ic" NAME="UrlValidatorTest.testManualTest Coverage Results" MODIFIED="1528771863468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/URLValidatorInCorrect$UrlValidatorTest.ic" NAME="UrlValidatorTest Coverage Results" MODIFIED="1528772083202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UrlValidatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="63" column="57" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="57" />
+            <state relative-caret-position="409">
+              <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="326" selection-start-line="326" selection-end-line="326" />
-              <folding>
-                <element signature="e#7887#7888#0" expanded="true" />
-                <element signature="e#7931#7932#0" expanded="true" />
-                <element signature="e#8030#8031#0" expanded="true" />
-                <element signature="e#8056#8057#0" expanded="true" />
-                <element signature="e#8542#8543#0" expanded="true" />
-                <element signature="e#8575#8576#0" expanded="true" />
-                <element signature="e#8944#8945#0" expanded="true" />
-                <element signature="e#8985#8986#0" expanded="true" />
-                <element signature="e#9465#9466#0" expanded="true" />
-                <element signature="e#9509#9510#0" expanded="true" />
-                <element signature="e#10078#10079#0" expanded="true" />
-                <element signature="e#10133#10134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DomainValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DomainValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegexValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RegexValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
-              <folding>
-                <element signature="e#2784#2785#0" expanded="true" />
-                <element signature="e#2817#2818#0" expanded="true" />
-                <element signature="e#3238#3239#0" expanded="true" />
-                <element signature="e#3295#3296#0" expanded="true" />
+                <element signature="e#6699#6700#0" expanded="true" />
+                <element signature="e#6742#6743#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,8 +40,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/UrlValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/RegexValidator.java" />
+        <option value="$PROJECT_DIR$/test/UrlValidatorTest.java" />
       </list>
     </option>
   </component>
@@ -102,10 +60,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1081" />
-    <option name="y" value="29" />
-    <option name="width" value="1398" />
-    <option name="height" value="998" />
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -113,9 +70,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,6 +91,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,7 +121,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UrlValidatorTest.testManualTest">
+  <component name="RunManager" selected="JUnit.UrlValidatorTest">
+    <configuration name="UrlValidatorTest.testPartitionA" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="URLValidatorInCorrect" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UrlValidatorTest" />
+      <option name="METHOD_NAME" value="testPartitionA" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -246,10 +220,12 @@
     <list>
       <item itemvalue="JUnit.UrlValidatorTest" />
       <item itemvalue="JUnit.UrlValidatorTest.testManualTest" />
+      <item itemvalue="Android JUnit.UrlValidatorTest.testPartitionA" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UrlValidatorTest.testManualTest" />
+        <item itemvalue="Android JUnit.UrlValidatorTest.testPartitionA" />
       </list>
     </recent_temporary>
   </component>
@@ -264,25 +240,11 @@
       <option name="presentableId" value="Default" />
       <updated>1528590471435</updated>
       <workItem from="1528590476017" duration="7997000" />
+      <workItem from="1528771385667" duration="500000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 18h 14m 47s.xml">
-      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 18h 25m 49s.xml">
-      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 22h 17m 40s.xml">
-      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 22h 18m 03s.xml">
-      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 22h 21m 15s.xml">
-      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 22h 21m 19s.xml">
       <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
     </history-entry>
@@ -298,42 +260,58 @@
     <history-entry file="UrlValidatorTest_testManualTest - 2018.06.09 at 22h 31m 52s.xml">
       <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.11 at 19h 50m 04s.xml">
+      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.11 at 19h 50m 40s.xml">
+      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.11 at 19h 51m 04s.xml">
+      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest_testManualTest - 2018.06.11 at 19h 51m 06s.xml">
+      <configuration name="UrlValidatorTest.testManualTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest_testPartitionA - 2018.06.11 at 19h 51m 17s.xml">
+      <configuration name="UrlValidatorTest.testPartitionA" configurationId="AndroidJUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7997000" />
+    <option name="totallyTimeSpent" value="8497000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1081" y="29" width="1398" height="998" extended-state="0" />
+    <frame x="-7" y="0" width="1294" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32869378" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34767836" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.37771347" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114327066" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32869378" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34763947" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.3771518" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12363067" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39828694" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39806867" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,67 +324,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/UrlValidatorTest.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UrlValidator.java</url>
+          <url />
           <line>414</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UrlValidator.java</url>
+          <url />
           <line>392</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RegexValidator.java</url>
+          <url />
           <line>82</line>
           <properties />
           <option name="timeStamp" value="12" />
@@ -416,6 +346,59 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6699#6700#0" expanded="true" />
+            <element signature="e#6742#6743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4947">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+          <folding>
+            <element signature="e#7887#7888#0" expanded="true" />
+            <element signature="e#7931#7932#0" expanded="true" />
+            <element signature="e#8030#8031#0" expanded="true" />
+            <element signature="e#8056#8057#0" expanded="true" />
+            <element signature="e#8542#8543#0" expanded="true" />
+            <element signature="e#8575#8576#0" expanded="true" />
+            <element signature="e#8944#8945#0" expanded="true" />
+            <element signature="e#8985#8986#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#9509#9510#0" expanded="true" />
+            <element signature="e#10078#10079#0" expanded="true" />
+            <element signature="e#10133#10134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DomainValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RegexValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2817#2818#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3295#3296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -432,7 +415,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DomainValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="1309">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
         </state>
       </provider>
@@ -461,7 +444,7 @@
     <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="326" selection-start-line="326" selection-end-line="326" />
+          <caret line="392" selection-start-line="392" selection-end-line="392" />
           <folding>
             <element signature="e#7887#7888#0" expanded="true" />
             <element signature="e#7931#7932#0" expanded="true" />
@@ -481,10 +464,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RegexValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
           <folding>
-            <element signature="e#2784#2785#0" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="e#2817#2818#0" expanded="true" />
             <element signature="e#3238#3239#0" expanded="true" />
             <element signature="e#3295#3296#0" expanded="true" />
@@ -494,10 +477,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="63" column="57" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="57" />
+        <state relative-caret-position="409">
+          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6699#6700#0" expanded="true" />
+            <element signature="e#6742#6743#0" expanded="true" />
           </folding>
         </state>
       </provider>
